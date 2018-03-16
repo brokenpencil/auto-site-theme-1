@@ -1,0 +1,16 @@
+<html>
+    {% include head.html %}
+<body>
+    <h1>{{ site.office_name }}</h1>
+
+    {% for item in site.list_o_shit %}
+        {% if forloop.first %}<ul>{% endif %}
+            <li>{{ item }}</li>
+        {% if forloop.last %}</ul>{% endif %}
+    {% endfor %}
+    
+    {{content}}
+</body>
+
+</html>
+
