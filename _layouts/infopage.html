@@ -4,16 +4,11 @@
     <h1>Welcome to {{ site.office_meta.name }}</h1>
 
     <p>We are located at <b>{{ site.office_meta.address }}, {{ site.office_meta.city }}, {{site.office_meta.state}}</b></p>
-
     <p>You can call us at <b>{{ site.office_meta.phone }}</b></p>
-
-    
     <p>We're on Twitter at {{ site.twitter_username }}
-    {{content}}
-
+    
     <hr/>
-    {% include office-details.html %}
-
+    {{content}}
 </body>
 
 </html>
