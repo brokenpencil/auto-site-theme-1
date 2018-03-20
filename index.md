@@ -1,5 +1,5 @@
 ---
-layout: infopage
+layout: home
 ---
 
 > Hi guys

@@ -1,0 +1,67 @@
+# Config/Build file
+title: Welcome!
+email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+hostname: coalcreekfamilydental
+
+cloudinary:
+  cloud_name: heartland-dental
+
+
+# Build settings
+markdown: kramdown
+
+# Site theme
+site_theme:
+  file: grey-orange
+  color: ffffff
+
+# Hero Image (maybe this is content)
+hero:
+  path: _common/hero/couples/couple-17
+  alt: Photo of Smiling Couple
+
+# Office details
+office_meta:
+  location_id: 8621
+  epicor_id: 3100004
+  name: Coal Creek Family Dental
+  address: 440 Erie Pkwy
+  city: Erie
+  state: [CO,Colorado]
+  zip: 80516
+  lat: 40.036005
+  lon: -105.053571
+  phone: 303-953-0530
+  speeddial: 1023
+
+social:
+  facebook: https://facebook.com/2005614842986902
+  youtube:
+  linkedin:
+  instagram: https://www.instagram.com/coalcreekfamilydental/
+  twitter:
+  snapchat:
+
+pc-line: Colorado Dental Professionals, LLC
+
+google_tag_generator_id: GTM-MFJZ82
+
+hours: [
+[Monday, "7:00 AM", "5:00 PM"],
+[Tuesday, "7:00 AM", "6:00 PM"],
+[Wednesday, "7:00 AM", "7:00 PM"],
+[Thursday, "7:00 AM", "5:00 PM"],
+[Friday, "8:00 AM", "2:00 PM"],
+]
+
+
+# Exclude from processing.
+exclude:
+  - Gemfile
+  - Gemfile.lock

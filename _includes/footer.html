@@ -1,0 +1,34 @@
+<footer class="page-footer">
+  <div class="content">
+    <section class="location">
+      <div class="address">
+        <h4 class="name">{{site.office_meta.name}}</h4>
+        <div class="street">{{site.office_meta.address}}</div>
+        <span class="city">{{site.office_meta.city}}</span>,
+        <span class="state">{{site.office_meta.state[1]}}</span>
+        <span class="zip">{{site.office_meta.zip}}</span>
+      </div>
+      <div class="tel"><a href="tel:+1{{site.office_meta.phone}}">{{site.office_meta.phone}}</a></div>
+      <div class="footer-pc-text">{{site.pc-line}}</div>
+      <!-- <div class="practice">
+        <div class="footer-pc-text">Dental Professionals of Maryland, Gerald Awadzi, P.C.</div>
+        <div class="doctor-name">Dr. Syrianos-Robertson DDS</div>
+        <div class="doctor-name">Dr. Ver Ploeg DMD</div>
+      </div> -->
+    </section>
+
+    <section class="hours">
+      <h4>Office Hours</h4>
+      {% for day in site.hours %}
+        <div class="day"><span class="label">{{day[0]}}:</span> <span class="time">{{day[1]}} &ndash; {{day[2]}}</span></div>
+      {% endfor %}
+    </section>
+    <section class="social">
+      <h4>Social Media</h4>
+      {% include social-icons.html %}
+    </section>
+    <section class="accessibility">
+      <p>Highland Family Dentistry welcomes patients with disabilities. If you need an accommodation to receive dental services, we would be happy to provide one. Please contact us at <a href="tel:+1{{site.office_meta.phone}}">{{site.office_meta.phone}}</a> to let us know how we may be of assistance. Additional fees may be involved in individual cases. Please contact our offices for details.</p>
+    </section>
+  </div>
+</footer>

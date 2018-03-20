@@ -1,0 +1,85 @@
+/* purple-applegreen */
+/* Font: Montserrat (Google Font)
+200 ExtraLight
+300 Light
+400 Regular
+600 Semibold
+700 Bold
+*/
+
+
+:root {
+  --pagebg:     #fff;       /* Page background. White, maybe a nice gray, that most people would call white. */
+
+  --primary:    #B6D93C;    /* Primary brand color. Used for links and buttons */
+  --alternate:  #91B31A;    /* Darker variant of brand color, for things like buttons */
+  --links:      #91B31A;    /* Set to the same as --alternate in most cases */
+
+  --secondary:  #674172;    /* Secondary color. Used for normal buttons. Can be used for the footer background. */
+  --accent:     #EFECF0;    /* Ligher color. Usually used for footer background and other design elements. */
+  --headerTXT:  #ffffff;    /* Header text, essentially. Foreground on header/aside. */
+
+
+                            /* A selection of shades of gray. These can be changed to match a color
+                            scheme--that's why they're variables. But probably not. */
+  --xlight:     #ddd;
+  --light:      #bebebe;
+  --medium:     #808080;
+  --dark:       #3c3c3c;
+  --xdark:      #181818;
+
+
+  --normal:     #4a4a4a;    /* Primary text color */
+  --lighter:    #9b9b9b;    /* Lighter body copy. Used in several places. Should be similar to normal or accent text. */
+  --emphasis:   #000;       /* Secondary text color. Used for major headings. */
+
+}
+
+body {
+  background: var(--pagebg); color: var(--normal);
+  font: 400 1rem/1.2 Montserrat, Helvetica, Arial, sans-serif;
+}
+h1, h2 {color: var(--emphasis);}
+h3, h4, h5, h6 {color: var(--normal)}
+footer h3, footer h4 {color:var(--normal)}
+a {color: var(--links)}
+a.button {
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+a.button:hover, a.button:active {
+  background-color: var(--secondary);
+  color: #fff;
+}
+a.button.secondary {
+  color: #fff;
+  background-color: var(--primary);
+  border-color: var(--primary);
+  border-bottom-color: var(--alternate);
+}
+a.button.secondary:hover, a.button.secondary:active {
+  background-color: var(--alternate);
+  border-color: var(--alternate);
+}
+a.button.alt {
+  background-color: #fff;
+  color: var(--primary);
+  border-width: 0 0 5px;
+  border-color: #fff;
+  border-bottom-color: var(--primary);
+}
+a.button.alt:hover, a.button.alt:active {
+  background: var(--alternate);
+  border-color: var(--alternate);
+  color: #fff;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {color:inherit; text-decoration: none;}
+.page-header,
+main > aside {
+  background: var(--secondary);
+  color: #fff;
+}
+.page-header a {color: #fff;}
+.page-footer {
+  background: var(--accent);
+}

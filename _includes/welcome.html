@@ -1,0 +1,26 @@
+<section class="welcome">
+  <div class="content fw">
+    <!-- Welcome Section -->
+    <div class="hero">
+      <img srcset="https://res.cloudinary.com/{{site.cloudinary.cloud_name}}/image/upload/c_fill,w_960/v1/{{site.hero.path}}.jpg 840w, https://res.cloudinary.com/{{site.cloudinary.cloud_name}}/image/upload/c_fill,w_1920/v1/{{site.hero.path}}.jpg 1692w" src="https://res.cloudinary.com/{{site.cloudinary.cloud_name}}/image/upload/c_fill,w_960/v1/{{site.hero.path}}.jpg" alt="{{site.hero.alt}}">
+      <div class="message">
+        <h1>Welcome to <span>{{site.office_meta.name}}.</span></h1>
+      </div>
+    </div>
+    <div class="action">
+      <div class="make-appointment">
+        <a href="#" class="button secondary">Make an Appointment</a>
+        <span>or call</span>
+        <a href="tel:+1{{site.office_meta.phone}}" class="button primary">{{site.office_meta.phone}}</a>
+      </div>
+      <div class="star-rating">
+        <a href="#">
+          <span class="stars" data-rating="4.8" title="4.8 out of 5 stars"><span></span></span>
+          <span class="rating-value">4.8 out of 5</span>
+          <span class="comments">(560 Ratings, 165 Comments)</span>
+        </a>
+      </div>
+    </div>
+    <!-- /Welcome Section -->
+  </div>
+</section>
