@@ -2,10 +2,9 @@
 title: Welcome!
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Welcome to [site:practice_name]. Our excellent service, friendly team and
-  state-of-the-art facility ensure you will receive the high quality,
-  personalized dental care you need and deserve. Call to make an appointment
-  today.
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 hostname: coalcreekfamilydental
