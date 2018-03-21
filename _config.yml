@@ -2,24 +2,65 @@
 title: Welcome!
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Welcome to [site:practice_name]. Our excellent service, friendly team and
+  state-of-the-art facility ensure you will receive the high quality,
+  personalized dental care you need and deserve. Call to make an appointment
+  today.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
+hostname: coalcreekfamilydental
+
+cloudinary:
+  cloud_name: heartland-dental
+
 
 # Build settings
 markdown: kramdown
 
+# Site theme
+site_theme:
+  file: grey-orange
+  color: ffffff
+
+# Hero Image (maybe this is content)
+hero:
+  path: _common/hero/couples/couple-17
+  alt: Photo of Smiling Couple
+
 # Office details
 office_meta:
-  office_id:
+  location_id:
+  epicor_id: 
   name:
   address:
   city:
   state:
+  zip:
+  lat:
+  lon:
   phone:
+  speeddial:
+
+social:
+  facebook: https://facebook.com/2005614842986902
+  youtube:
+  linkedin:
+  instagram: https://www.instagram.com/coalcreekfamilydental/
+  twitter:
+  snapchat:
+
+pc-line: Colorado Dental Professionals, LLC
+
+google_tag_generator_id: GTM-MFJZ82
+
+hours: [
+[Monday, "7:00 AM", "5:00 PM"],
+[Tuesday, "7:00 AM", "6:00 PM"],
+[Wednesday, "7:00 AM", "7:00 PM"],
+[Thursday, "7:00 AM", "5:00 PM"],
+[Friday, "8:00 AM", "2:00 PM"],
+]
+
 
 # Exclude from processing.
 exclude:
