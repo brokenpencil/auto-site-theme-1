@@ -3,7 +3,7 @@
     {% include logo.html %}
 
     <nav>
-      <a href="#" id="menutoggle" class="menu-toggle" data-id="menu"><svg class="icon icon-menu"><use xlink:href="{{" styles/symbol-defs.svg#icon-bars" | relative_url }}"></use></svg></a>
+      <a href="#" id="menutoggle" class="menu-toggle" data-id="menu"><svg class="icon icon-menu"><use xlink:href="{{site.baseurl}}styles/symbol-defs.svg#icon-bars"></use></svg></a>
       <ul class="primary" role="navigation" id="menu">
         <li class="about"><a href="/about-your-dentist.html">About Your Dentist</a></li>
         <li class="payment-options"><a href="#">Payment Options</a></li>
@@ -18,7 +18,7 @@
               <span class="state">{{site.office_meta.state[1]}}</span>
               <span class="zip">{{site.office_meta.zip}}</span>
             </div>
-            <svg class="icon icon-map-marker"><use xlink:href="{{ "/assets/styles/symbol-defs.svg#icon-map-marker" | relative_url }}"></use></svg>
+            <svg class="icon icon-map-marker"><use xlink:href="{{site.baseurl}}/assets/styles/symbol-defs.svg#icon-map-marker"></use></svg>
           </a>
         </li>
       </ul>
